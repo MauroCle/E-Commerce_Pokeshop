@@ -1,0 +1,262 @@
+:root {
+    --rojo1: #e24343; /*#5c99d4*/
+    --celeste1: #3d71bb;
+    --gris1: #ebebeb;
+
+    /* --verde: #78c870;
+    --verde1: #12c59b;
+    --celeste1: #3d71bb;
+    --gris1: #c8d8e8;
+     */
+}
+
+*{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Proxima Nova,Helvetica, Neue,Helvetica,Roboto,Arial,sans-serif;
+    transition: 0.3s;
+}
+
+body{
+    background-color: var(--gris1);
+}
+
+
+header{
+    background-color: var(--rojo1);
+    border-bottom: solid;
+    z-index: 1;
+}
+
+.flex-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+.nav-inicio{
+    display: none;
+}
+.flex-nav a {
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header ul{
+padding-top: 1vw;
+padding-bottom: 1vw;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+
+header ul li ul li{
+
+    margin-right: 2rem;
+}
+
+header ul li ul li a:active{
+    font-weight: bold;
+}
+
+.header-logo{
+    position: absolute;
+    z-index: 0;
+    height: auto;
+    width: 150px;
+    margin-left: 150px;
+
+}
+
+.pokeshop-banner img{
+    display: block;
+    width: 100%;
+    margin:auto;
+
+} 
+
+/*Cards de productos*/
+
+.productos-titulo{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+
+}
+
+.flex-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.producto{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.4s;
+    background: #f2f2f2;
+}
+.producto:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px,-8px);
+}
+.producto img{
+    width: 175px;
+    height: 175px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.producto p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top:0 8px;
+
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.comprar{
+    text-align: center;
+    font-size: 24px;
+    color: #fff; 
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #0b0b0b;
+}
+
+.comprar:hover{
+    background: #ff9f43;
+    transition: 0.3s;
+}
+
+/*Boton mas productos y footer*/
+.mas-productos{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.mas-productos a{
+    font-size: 25px;
+    padding: 2px 7px 2px 7px;
+    border-radius: 10px;
+    border: solid 1px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.mas-productos a:hover{
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: 0.3s;
+}
+
+
+footer{
+    box-shadow: 0px -0.4px 15px 1px rgb(0, 0, 0);
+    height: 15vh;
+    width: 100%;
+    background-color: var(--rojo1);
+}
+
+.footer-izquierda{
+    padding-top: 2vw;
+    font-size: 2vh;
+    padding-left: 2vh;
+}
+
+@media(max-width: 1400px)
+{
+    .producto{
+        width: 29%;
+    }
+    .header-logo{
+        margin-left: 125px;
+        margin-top: -10px;
+    }
+}
+
+@media(max-width: 1200px)
+{
+    .producto{
+        width: 40%;
+    }
+
+    .mas-productos a{
+        font-size: 32px;
+    }
+    .header-logo{
+        margin-left: 100px;
+    }
+
+}
+@media(max-width: 1000px)
+{
+    .producto{
+        width: 100%;
+    }
+
+    .mas-productos a{
+        font-size: 36px;
+
+    }
+    .header-logo{
+        display: none;
+    }
+
+    .flex-nav{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .flex-nav a {
+        font-size: 20px;
+
+    }
+
+    .footer-izquierda p{
+        font-size: 20px;
+
+    }
+    .nav-inicio{
+        display: flex;
+    }
+}
+
+
+
+

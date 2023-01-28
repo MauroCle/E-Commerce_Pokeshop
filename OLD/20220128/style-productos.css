@@ -1,0 +1,243 @@
+:root {
+    --rojo1: #e24343; /*#5c99d4*/
+    --celeste1: #3d71bb;
+    --gris1: #ebebeb;
+
+    /* --verde: #78c870;
+    --verde1: #12c59b;
+    --celeste1: #3d71bb;
+    --gris1: #c8d8e8;
+     */
+}
+
+*{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Proxima Nova,Helvetica, Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+body{
+    background-color: var(--gris1);
+}
+
+
+header{
+    background-color: var(--rojo1);
+    border-bottom: solid;
+    z-index: 1;
+}
+
+.flex-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+.flex-nav a {
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header ul{
+padding-top: 1vw;
+padding-bottom: 1vw;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+
+header ul li ul li{
+
+    margin-right: 2rem;
+}
+
+header ul li ul li a:active{
+    font-weight: bold;
+}
+
+.header-logo{
+    position: absolute;
+    z-index: 0;
+    height: auto;
+    width: 15vw;
+    margin-left: 3vw;
+    margin-top: -2vw;
+}
+
+
+.pokeshop-banner img{
+    display: block;
+    width: 100%;
+    margin:auto;
+
+}
+
+/* .pokeshop-banner{
+    background-image: url(../recursos/imagenes/HGSS_Ruta_32.png);
+    display: block;
+    width: 100%;
+    margin:auto;
+    border-top: 5px black;
+} */
+
+/* .pokeshop-banner h1{
+    top: 50%;
+    left: 50%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 10vw;
+    color: rgb(255, 208, 0);
+
+    text-shadow: 3px 3px 0 var(--celeste1),
+    -3px 3px 0 var(--celeste1),
+    3px -3px 0 var(--celeste1),
+    -3px -3px 0 var(--celeste1),
+    0px 3px 0 var(--celeste1),
+    0px -3px 0 var(--celeste1),
+    -3px 0px 0 var(--celeste1),
+    3px 0px 0 var(--celeste1),
+    6px 6px 0 var(--celeste1),
+    -6px 6px 0 var(--celeste1),
+    6px -6px 0 var(--celeste1),
+    -6px -6px 0 var(--celeste1),
+    0px 6px 0 var(--celeste1),
+    0px -6px 0 var(--celeste1),
+    -6px 0px 0 var(--celeste1),
+    6px 0px 0 var(--celeste1),
+    3px 6px 0 var(--celeste1),
+    -3px 6px 0 var(--celeste1),
+    3px -6px 0 var(--celeste1),
+    -3px -6px 0 var(--celeste1),
+    6px 3px 0 var(--celeste1),
+    -6px 3px 0 var(--celeste1),
+    6px -3px 0 var(--celeste1),
+    -6px -3px 0 var(--celeste1);
+    /* https://stackoverflow.com/questions/2570972/css-font-border
+
+} */
+
+.flex-productos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.flex-productos li span{
+    font-size: xx-large;
+}
+
+h2{
+    margin-top:7vh;
+    margin-bottom:3vh;
+    text-align: center;
+    font-weight: normal;
+}
+
+.productos{
+    margin-top: 10px;
+}
+
+.productos-titulo{
+    /* margin-bottom: px; */
+    margin-left: 10vw;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+
+}
+
+
+.producto{
+    cursor: pointer;
+    width: 15vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    margin: 0px 5px 5px 5px;
+    height: 30vw;
+    min-height: 125px;
+}
+
+.producto img{
+    width: 13vw;
+    height: auto;
+    border-bottom: solid;
+    border-color: rgb(192, 192, 192);
+    border-bottom-width: 1px;
+
+}
+
+.flex-mas-productos{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-mas-productos a{
+    padding: 2px 7px 2px 7px;
+    border-radius: 50px;
+    border: solid 1px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.flex-mas-productos a:active{
+    font-weight: bold;
+}
+
+footer{
+    box-shadow: 0px -0.4px 15px 1px rgb(0, 0, 0);
+    height: 15vh;
+    width: 100%;
+    background-color: var(--rojo1);
+}
+
+.footer-izquierda{
+    padding-top: 2vw;
+    font-size: 2vh;
+    padding-left: 2vh;
+}
+
+/*tests*/
+
+.producto p{
+    font-size: 9px;
+    padding-bottom: 3px;
+    margin: 0 5px 0 ;
+}
+
+.producto-precio {
+color:#00a650;
+margin: 3px;
+}
+
+.grid-productos{
+    margin-top: 50px;
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "filtro producto producto producto producto"
+    "filtro producto producto producto producto"
+    "filtro producto producto producto producto"
+    "filtro producto producto producto producto"
+    "filtro producto producto producto producto";
+}
+
+.productos-filtos{
+    grid-area: filtro;
+}
+
+
+
