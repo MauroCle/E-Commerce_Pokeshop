@@ -1,55 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" href="../css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Stylesheet" href="../css/style.css" />
+  <link rel="Stylesheet" href="../css/style-carrito.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <img class="header-logo" src="../recursos/imagenes/logo.png" />
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex-nav">
+          <li>
+            <a href="./index.html" class="nav-inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="../secciones/Nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="../secciones/Productos.html">Productos</a>
+          </li>
+          <li>
+            <a href="../secciones/Contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="../secciones/Carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div>
       <ul>
         <li>
-          <ul>
-            <li>
-              <a href="../index.html">
-                <img class="header-logo" src="../recursos/imagenes/logo.png" />
-              </a>
-            </li>
-          </ul>
+          <div class="producto-carrito">
+            <img src="../recursos/imagenes/Productos/pocion2.png">
+            <div class="producto-carrito-descripcion">
+              <h3>Super pocion</h3>
+              <p>Recupera 50HP a tu pokemon.</p>
+            </div>
+            <div class="producto-carrito-precio">
+              <h4>Cantidad: 3</h4>
+              <h6>$2100</h6>
+            </div>
+          </div>
         </li>
         <li>
-          <ul class="flex-nav">
-            <li>
-              <a href="../secciones/Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-              <a href="../secciones/Productos.html">Productos</a>
-            </li>
-            <li>
-              <a href="../secciones/Contacto.html">Contacto</a>
-            </li>
-            <li>
-              <a href="../secciones/Carrito.html">Carrito</a>
-            </li>
-          </ul>
+          <div class="producto-carrito">
+            <img src="../recursos/imagenes/Productos/ball1.jpg">
+            <div class="producto-carrito-descripcion">
+              <h3>Pokeball</h3>
+              <p>Para entrenadores novatos.</p>
+            </div>
+            <div class="producto-carrito-precio">
+              <h4>Cantidad: 5</h4>
+              <h6>$1000</h6>
+            </div>
+          </div>
         </li>
-      </ul>
-    </header>
-    <br /><br /><br />
-    <h1>Carrito</h1>
+        <li>
+          <div class="producto-carrito">
+            <img src="../recursos/imagenes/Productos/ball4.jpg">
+            <div class="producto-carrito-descripcion">
+              <h3>Premierball</h3>
+              <p>Edicion limitada 2023.</p>
+            </div>
+            <div class="producto-carrito-precio">
+              <h4>Cantidad: 2</h4>
+              <h6>$2000</h6>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="precio-envio">Envío $550</p>
+        </li>
+        <li>
+          <p class="precio-total">Total con envío $5650</p>
+        </li>
+        <li>
+          <button class="completar-compra">Completar compra</button>
+        </li>
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <footer>
-      <div clas="flex-footer">
-        <div class="footer-izquierda">
-          <span
-            >Ciudad Azulona,<br />
-            Centro Comercial de Azulona, Piso 4.</span
-          >
-        </div>
+      </ul>
+    </div>
+
+  </main>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <footer>
+    <div clas="flex-footer">
+      <div class="footer-izquierda">
+        <span>Ciudad Azulona,<br />
+          Centro Comercial de Azulona, Piso 4.</span>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -27,11 +27,11 @@ text-align: center;
 .filtros-section ul{
     list-style-type: none;
     padding-left:20px;
-    cursor: pointer;
 }
 
 .filtro{
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .filtro:hover{
@@ -76,7 +76,7 @@ text-align: center;
 
     .filtros-section ul{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
 
     }
     .filtro{
