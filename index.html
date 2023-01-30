@@ -1,122 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" href="./css/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="flex-nav-info">
-        <div class="nav-info-contacto">
-            <span>+54 (011) 1564772809</span>
-            <span>soporte@pokeshop.com.ar</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="flex-nav-info">
+      <div class="nav-info-contacto">
+        <span>+54 (011) 1564772809</span>
+        <span>soporte@pokeshop.com.ar</span>
+      </div>
+      <div class="nav-info-configuracion">
+        <div>
+          <img class="lenguaje-img" src="./recursos/imagenes/arg.png" alt="img">
+          <span>Español</span>
         </div>
-        <div class="nav-info-configuracion">
-            <div>
-                <img class="lenguaje-img" src="./recursos/imagenes/arg.png" alt="img">
-                <span>Español</span>
-            </div>
-            <span>Ingresar</span>
-        </div>
+        <span>Ingresar</span>
+      </div>
     </div>
     <div class="grid-nav-general">
-        <a href="/index.html" class="poke">Poke</a><a href="/index.html" class="shop">shop</a>
-        <input class="nav-buscador" type="text" placeholder="Buscar productos." name="productos-buscados" />
-        <a href="./secciones/productos.html" class="nav-productos">Productos</a>
-        <a href="./secciones/Carrito.html" class="nav-carrito">Carrito</a>
-        <a href="./secciones/Contacto.html" class="nav-contacto">Contacto</a>
-        <a href="./secciones/Nosotros.html" class="nav-nosotros">Nosotros</a>
+      <a href="./index.html" class="poke">Poke</a><a href="./index.html" class="shop">shop</a>
+      <input class="nav-buscador" type="text" placeholder="Buscar productos." name="productos-buscados" />
+      <a href="./secciones/productos.html" class="nav-productos">Productos</a>
+      <a href="./secciones/Carrito.html" class="nav-carrito">Carrito</a>
+      <a href="./secciones/Contacto.html" class="nav-contacto">Contacto</a>
+      <a href="./secciones/Nosotros.html" class="nav-nosotros">Nosotros</a>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <div class="pokeshop-banner">
+  <main>
+    <div class="encabezado">
+      <h1>¡Apoyando a los entrenadores en sus aventuras Pokémon!</h1>
+      <p>Nuestra misión en PokeShop es proporcionar a los entrenadores todo lo que necesitan para embarcarse en su viaje
+        Pokémon. Desde las mejores pociones y pokebolas hasta consejos de expertos y una comunidad, estamos aquí para
+        ayudarte a lograr tus objetivos y aprovechar al máximo tu experiencia Pokémon.<br> ¡Únete a nosotros y descubre
+        por qué somos el corazón de la comunidad Pokémon!</p>
+    </div>
+
+    <!-- <div class="pokeshop-banner">
         <img src="../recursos/imagenes/backgrounds/offer.jpg" />
+      </div> -->
+    <h3 class="productos-titulo">Nuevos productos</h3>
+    <div class="flex-productos">
+      <div class="producto">
+        <img src="./recursos/imagenes/Productos/pocion1.png">
+        <h3>Pocion simple</h3>
+        <p>Recupera 20HP a tu pokemon.</p>
+        <h6>$300</h6>
+        <button class="comprar">Comprar</button>
       </div>
-        <h3 class="productos-titulo">Nuestros productos</h3>
-        <div class="flex-productos">
-          <div class="producto">
-              <img src="./recursos/imagenes/Productos/pocion1.png">
-              <h3>Pocion simple</h3>
-              <p>Recupera 20HP a tu pokemon.</p>
-              <h6>$300</h6>
-              <button class="comprar">Comprar</button>
-          </div>
-          <div class="producto">
-              <img src="./recursos/imagenes/Productos/pocion2.png">
-              <h3>Super pocion</h3>
-              <p>Recupera 50HP a tu pokemon.</p>
-              <h6>$700</h6>
-              <button class="comprar">Comprar</button>
-          </div>
-          <div class="producto">
-              <img src="./recursos/imagenes/Productos/pocion3.png">
-              <h3>Hiper pocion</h3>
-              <p>Recupera 200HP a tu pokemon.</p>
-              <h6>$1200</h6>
-              <button class="comprar">Comprar</button>
-          </div>
-          <div class="producto">
-              <img src="./recursos/imagenes/Productos/Pocion_maxima.png">
-              <h3>Pocion maxima</h3>
-              <p>Recupera totalmente a tu pokemon.</p>
-              <h6>$2500</h6>
-              <button class="comprar">Comprar</button>
-          </div>
+      <div class="producto">
+        <img src="./recursos/imagenes/Productos/pocion2.png">
+        <h3>Super pocion</h3>
+        <p>Recupera 50HP a tu pokemon.</p>
+        <h6>$700</h6>
+        <button class="comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="./recursos/imagenes/Productos/pocion3.png">
+        <h3>Hiper pocion</h3>
+        <p>Recupera 200HP a tu pokemon.</p>
+        <h6>$1200</h6>
+        <button class="comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="./recursos/imagenes/Productos/Pocion_maxima.png">
+        <h3>Pocion maxima</h3>
+        <p>Recupera totalmente a tu pokemon.</p>
+        <h6>$2500</h6>
+        <button class="comprar">Comprar</button>
+      </div>
+    </div>
+
+      <h3 class="productos-titulo">Pokeballs</h3>
+      <div class="flex-productos">
+        <div class="producto">
+          <img src="./recursos/imagenes/Productos/ball1.jpg">
+          <h3>Pokeball</h3>
+          <p>Para entrenadores novatos.</p>
+          <h6>$200</h6>
+          <button class="comprar">Comprar</button>
         </div>
-
-        <div class="productos">
-          <h3 class="productos-titulo">Pokeballs</h3>
-
-          <div class="flex-productos">
-            <div class="producto">
-                <img src="./recursos/imagenes/Productos/ball1.jpg">
-                <h3>Pokeball</h3>
-                <p>Para entrenadores novatos.</p>
-                <h6>$200</h6>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="./recursos/imagenes/Productos/ball2.jpg">
-                <h3>Superball</h3>
-                <p>Mejora tus posibilidades de captura.</p>
-                <h6>$600</h6>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="./recursos/imagenes/Productos/ball3.jpg">
-                <h3>Utraball</h3>
-                <p>Maximiza tus posibilidades de captura.</p>
-                <h6>$1200</h6>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="./recursos/imagenes/Productos/ball4.jpg">
-                <h3>Premierball</h3>
-                <p>Edicion limitada 2023.</p>
-                <h6>$1000</h6>
-                <button class="comprar">Comprar</button>
-            </div>
-          </div>
+        <div class="producto">
+          <img src="./recursos/imagenes/Productos/ball2.jpg">
+          <h3>Superball</h3>
+          <p>Mejora tus posibilidades de captura.</p>
+          <h6>$600</h6>
+          <button class="comprar">Comprar</button>
         </div>
-
-        <div class="mas-productos">
-          <a href="./secciones/Productos.html">Ver todos los productos</a>
+        <div class="producto">
+          <img src="./recursos/imagenes/Productos/ball3.jpg">
+          <h3>Utraball</h3>
+          <p>Maximiza tus posibilidades de captura.</p>
+          <h6>$1200</h6>
+          <button class="comprar">Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="./recursos/imagenes/Productos/ball4.jpg">
+          <h3>Premierball</h3>
+          <p>Edicion limitada 2023.</p>
+          <h6>$1000</h6>
+          <button class="comprar">Comprar</button>
         </div>
       </div>
-    </main>
-    <footer>
-      <div clas="flex-footer">
-        <div class="footer-izquierda">
-          <p>Ciudad Azulona,<br />
-            Centro Comercial de Azulona, Piso 4.
-          </p>
-        </div>
+
+
+    <div class="mas-productos">
+      <a href="./secciones/Productos.html">Ver todos los productos</a>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div clas="flex-footer">
+      <div class="footer-izquierda">
+        <p>Ciudad Azulona,<br />
+          Centro Comercial de Azulona, Piso 4.
+        </p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -10,7 +10,7 @@
 body{
     background-color: var( #f2f2f2);
 }
-
+/*HEADER*/
 header{
     font-family: sans-serif;
     background-color: #f0f0f0;
@@ -123,41 +123,47 @@ header a {
 .nav-nosotros:hover{
     color:#ff9f43;
 }
+/*Encabezado*/
+h1 {
+    margin-top: 50px;
+}
+
+.encabezado{
+    text-align: center;
+}
+
+.encabezado p{
+    display: inline-block;
+    margin-top: 15px;
+    max-width: 1000px;
+}
 
 
-
-
-
-.pokeshop-banner img{
-    display: block;
-    width: 100%;
-    margin:auto;
-
-} 
-
-/*Cards de productos*/
 
 .productos-titulo{
     margin-top: 50px;
     margin-bottom: 15px;
     font-weight: normal;
-
-}
-
-h3{
     text-align: center;
-    font-size: 30px;
-    padding-top: 10px;
 }
+
 a{
     text-decoration: none;
+}
 
+/*Cards de productos*/
+h3{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
 }
 
 .flex-productos{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 90%;
     justify-content: center;
     align-items: center;
 
@@ -240,6 +246,7 @@ h6{
 .mas-productos a:hover{
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 transition: 0.3s;
+background-color:#ff9f43;
 }
 
 
@@ -259,12 +266,7 @@ footer{
     transition: 0s;
 }
 
-@media(max-width: 1400px)
-{
-    .producto{
-        width: 29%;
-    }
-}
+
 
 @media(max-width: 1200px)
 {
@@ -277,14 +279,14 @@ footer{
     }
 
 }
-@media(max-width: 1000px)
+@media(max-width: 800px)
 {
     .producto{
         width: 100%;
     }
 
     .mas-productos a{
-        font-size: 36px;
+        font-size: 30px;
 
     }
 

@@ -1,6 +1,7 @@
 h1{
     text-align: center;
-    margin: 80px 0 50px 0;
+    font-size: 48px;
+    margin: 80px 0 80px 0;
 }
 
 .contenido{
@@ -14,21 +15,24 @@ h1{
     "imagen4 texto4";
     align-items: center;
     justify-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .contenido p{
-    margin-bottom: 50px;
-    max-width: 550px;
+    margin-bottom: 150px;
+    max-width: 800px;
     text-align: justify;
+    font-size: 24px;
 }
 
 .contenido img{
-    margin-bottom: 50px;
-    width: 550px;
+    margin-bottom: 150px;
+    width: 500px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.25), 7px 15px 10px rgba(0,0,0,0.22);
 }
 .texto1{
     grid-area: texto1;
+    margin-left: 50px;
 }
 
 .imagen1{
@@ -37,6 +41,7 @@ h1{
 
 .texto2{
     grid-area: texto2;
+    margin-right: 50px;
 }
 
 .imagen2{
@@ -45,6 +50,7 @@ h1{
 
 .texto3{
     grid-area: texto3;
+    margin-left: 50px;
 }
 
 .imagen3{
@@ -53,8 +59,71 @@ h1{
 
 .texto4{
     grid-area: texto4;
+    margin-right: 50px;
 }
 
 .imagen4{
     grid-area: imagen4;
+}
+
+@media(max-width: 1200px)
+{
+
+    .contenido p{
+        font-size: 20px;
+    }
+    
+    .contenido img{
+        width: 350px;
+    }
+
+
+}
+
+
+@media(max-width: 800px)
+{
+    h1{
+        margin: 50px 0 0 0;
+    }
+    .contenido{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "texto1"
+        "imagen1"
+        "texto2"
+        "imagen2" 
+        "texto3" 
+        "imagen3"
+        "texto4"
+        "imagen4" ;
+    }
+
+    .contenido p{
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .contenido img{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .texto1{
+        margin-left: 0px;
+    }
+    
+    .texto2{
+        margin-right: 0px;
+    }
+
+    .texto3{
+        margin-left: 0px;
+    }
+
+    .texto4{
+        margin-right: 0px;
+    }
+
 }

@@ -45,14 +45,7 @@ cursor: pointer;
     grid-area: productos;
 }
 
-@media(max-width: 1400px)
-{
 
-    .grid-productos {
-        grid-template-columns: 3fr 11fr;
-
-    }
-}
 
 @media(max-width: 1200px)
 {
@@ -62,7 +55,7 @@ cursor: pointer;
 
     }
 }
-@media(max-width: 1000px)
+@media(max-width: 800px)
 {
 
     .grid-productos {
