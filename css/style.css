@@ -39,8 +39,16 @@ header a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 7px 0 0 0;
+
 }
 
+.nav-info-configuracion span{
+    cursor: pointer;
+}
+
+.nav-info-configuracion span:hover{
+    color: #ff9f43;
+}
 
 .lenguaje-img{
     width: 25px;
@@ -300,6 +308,11 @@ footer{
         padding-bottom: 30px;
     }
 
+
+
+    .flex-nav-info{
+        justify-content: center;
+    }
     .poke{
         margin-left: -70px;        
     }

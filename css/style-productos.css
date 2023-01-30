@@ -22,6 +22,7 @@ margin: 20px;
 color: #0b0b0b;
 font-weight: bold;
 text-align: center;
+cursor: pointer;
 }
 
 .filtros-section ul{
@@ -36,7 +37,7 @@ text-align: center;
 
 .filtro:hover{
     transition: 0.15s;
-    color: darkslategrey
+    color: #ff9f43;
 
 }
 

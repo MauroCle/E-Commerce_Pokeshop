@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    margin: 80px 0 50px 0;
+}
+
+.contenido{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "texto1 imagen1"
+    "imagen2 texto2"
+    "texto3 imagen3"
+    "imagen4 texto4";
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 200px;
+}
+
+.contenido p{
+    margin-bottom: 50px;
+    max-width: 550px;
+    text-align: justify;
+}
+
+.contenido img{
+    margin-bottom: 50px;
+    width: 550px;
+}
+.texto1{
+    grid-area: texto1;
+}
+
+.imagen1{
+    grid-area: imagen1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+.imagen2{
+    grid-area: imagen2;
+}
+
+.texto3{
+    grid-area: texto3;
+}
+
+.imagen3{
+    grid-area: imagen3;
+}
+
+.texto4{
+    grid-area: texto4;
+}
+
+.imagen4{
+    grid-area: imagen4;
+}
