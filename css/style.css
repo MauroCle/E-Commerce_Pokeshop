@@ -1,17 +1,6 @@
-:root {
-    --rojo1: #e24343; /*#5c99d4*/
-    --celeste1: #3d71bb;
-    --gris1: #ebebeb;
-
-    /* --verde: #78c870;
-    --verde1: #12c59b;
-    --celeste1: #3d71bb;
-    --gris1: #c8d8e8;
-     */
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 *{
-    color: black;
     margin: 0;
     padding: 0;
     font-family: Proxima Nova,Helvetica, Neue,Helvetica,Roboto,Arial,sans-serif;
@@ -19,57 +8,117 @@
 }
 
 body{
-    background-color: var(--gris1);
+    background-color: var( #f2f2f2);
 }
-
 
 header{
-    background-color: var(--rojo1);
-    border-bottom: solid;
-    z-index: 1;
-}
+    font-family: sans-serif;
+    background-color: #f0f0f0;
 
-.flex-nav{
+}
+header a {
+    color: #fff;
+}
+.flex-nav-info{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 0 5px 0;
 }
-.nav-inicio{
-    display: none;
+.nav-info-contacto{
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 7px 0 0 0;
 }
-.flex-nav a {
-    font-style: normal;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-header ul{
-padding-top: 1vw;
-padding-bottom: 1vw;
-list-style-type: none;
-display: flex;
-justify-content: space-between;
+.nav-info-configuracion{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 7px 0 0 0;
 }
 
-header ul li ul li{
 
-    margin-right: 2rem;
+.lenguaje-img{
+    width: 25px;
+    border-radius: 3px;
+    vertical-align:top
 }
 
-header ul li ul li a:active{
-    font-weight: bold;
+.grid-nav-general{
+    background-color: #252525;
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+    grid-auto-columns: repeat(24,1fr);
+    grid-template-areas:
+    "logo . . . . . . . . . . . . . . . . . . . buscador buscador buscador buscador . . producto carrito contacto nosotros";
+    padding: 50px 30px 70px 0;
+    color: aliceblue;
+
+
 }
 
-.header-logo{
-    position: absolute;
-    z-index: 0;
-    height: auto;
-    width: 150px;
-    margin-left: 150px;
-
+.poke{
+    font-size: 32px;
+    color: rgb(243, 176, 6);
+    margin-left: -43px;
+    font-family: 'Roboto Slab', serif;
+    grid-area: logo;
+    cursor: pointer;
 }
+
+.shop{
+    font-size: 32px;
+    margin-left: 105px;
+    font-family: 'Roboto Slab', serif;
+    grid-area: logo;
+    cursor: pointer;
+    color: #fff;
+}
+.nav-buscador{
+    grid-area: buscador;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    width:275px;
+}
+.nav-productos{
+    grid-area: producto;
+    cursor: pointer;
+}
+.nav-carrito{
+    grid-area: carrito;
+    cursor: pointer;
+}
+.nav-contacto{
+    grid-area: contacto;
+    cursor: pointer;
+}
+.nav-nosotros{
+    grid-area: nosotros;
+    cursor: pointer;
+}
+
+.nav-productos:hover{
+    color:#ff9f43;
+}
+.nav-carrito:hover{
+    color:#ff9f43;
+}
+.nav-contacto:hover{
+    color:#ff9f43;
+}
+.nav-nosotros:hover{
+    color:#ff9f43;
+}
+
+
+
+
 
 .pokeshop-banner img{
     display: block;
@@ -170,6 +219,7 @@ h6{
     justify-content: space-around;
 }
 .mas-productos a{
+    color: #0b0b0b;
     font-size: 25px;
     padding: 2px 7px 2px 7px;
     border-radius: 10px;
@@ -187,25 +237,24 @@ transition: 0.3s;
 
 footer{
     box-shadow: 0px -0.4px 15px 1px rgb(0, 0, 0);
-    height: 15vh;
+    height: 250px;
     width: 100%;
-    background-color: var(--rojo1);
+    background-color: #252525;
+    position: absolute;
 }
 
 .footer-izquierda{
     padding-top: 2vw;
     font-size: 2vh;
     padding-left: 2vh;
+    color: #f2f2f2;
+    transition: 0s;
 }
 
 @media(max-width: 1400px)
 {
     .producto{
         width: 29%;
-    }
-    .header-logo{
-        margin-left: 125px;
-        margin-top: -10px;
     }
 }
 
@@ -217,9 +266,6 @@ footer{
 
     .mas-productos a{
         font-size: 32px;
-    }
-    .header-logo{
-        margin-left: 100px;
     }
 
 }
@@ -233,27 +279,51 @@ footer{
         font-size: 36px;
 
     }
-    .header-logo{
-        display: none;
-    }
-
-    .flex-nav{
-        padding-top: 20px;
-        padding-bottom: 10px;
-        flex-wrap: wrap;
-    }
-
-    .flex-nav a {
-        font-size: 20px;
-
-    }
 
     .footer-izquierda p{
         font-size: 20px;
 
     }
-    .nav-inicio{
-        display: flex;
+
+    .grid-nav-general{
+        background-color: #252525;
+        display: grid;
+        align-items: baseline;
+        justify-items: center;
+        grid-auto-columns: repeat(4,1fr);
+        grid-row: 2fr 2fr;
+        grid-template-areas:
+        "logo logo logo logo "
+        "buscador buscador buscador buscador"
+        " producto carrito contacto nosotros";
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .poke{
+        margin-left: -70px;        
+    }
+    
+    .shop{
+        margin-left: 80px;   
+    }
+
+    .nav-buscador{
+        margin-top: 30px;
+    }
+
+    .nav-productos{
+        margin-top: 50px;  
+    }
+
+    .nav-carrito{
+        margin-top: 50px;
+    }
+    .nav-contacto{
+        margin-top: 50px;
+    }
+    .nav-nosotros{
+        margin-top: 50px;
     }
 }
 

@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" href="../css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <a href="../index.html">
-                <img class="header-logo" src="../recursos/imagenes/logo.png" />
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul class="flex-nav">
-            <li>
-              <a href="../secciones/Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-              <a href="../secciones/Productos.html">Productos</a>
-            </li>
-            <li>
-              <a href="../secciones/Contacto.html">Contacto</a>
-            </li>
-            <li>
-              <a href="../secciones/Carrito.html">Carrito</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </header>
 
-    <br><br><br><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Stylesheet" href="../css/style.css" />
+  <title>Document</title>
+</head>
 
-    <form action="#" method="GET">
-      <input type="text" placeholder="Tu nombre completo" name="Nombre" />
-      <input type="text" placeholder="Asunto del contacto" name="Asunto" />
-      <br /><br />
-      <input type="text" placeholder="Email de contacto" name="email" />
-      <br /><br />
-      <span>Consulta anonima</span>
-      <input type="checkbox" />
-      <br /><br />
-      <select name="consulta">
-        <option value="Default">Motivo de la consulta</option>
-        <option value="Compras">Compras</option>
-        <option value="Legal">Legales</option>
-        <option value="Reventa">Reventa</option>
-        <option value="Soporte">Soporte</option>
-        <option value="Otros">Otros</option>
-      </select>
-      <br /><br />
-      <textarea
-        placeholder="Indique su consulta aqui..."
-        name="textarea"
-        cols="50"
-        rows="10"
-      ></textarea>
-      <br /><br />
-      <input type="submit" value="Enviar consulta" />
-      <input type="reset" value="Restablecer formulario" />
-    </form>
-    <br><br><br>
-    <footer>
-      <div clas="flex-footer">
-        <div class="footer-izquierda">
-          <span
-            >Ciudad Azulona,<br />
-            Centro Comercial de Azulona, Piso 4.</span
-          >
-        </div>
+<body>
+  <header>
+    <div class="flex-nav-info">
+      <div class="nav-info-contacto">
+        <span>+54 (011) 1564772809</span>
+        <span>soporte@pokeshop.com.ar</span>
       </div>
-    </footer>
-  </body>
+      <div class="nav-info-configuracion">
+        <div>
+          <img class="lenguaje-img" src="../recursos/imagenes/arg.png" alt="img">
+          <span>Español</span>
+        </div>
+        <span>Ingresar</span>
+      </div>
+    </div>
+    <div class="grid-nav-general">
+      <a href="../index.html" class="poke">Poke</a><a href="/index.html" class="shop">shop</a>
+      <input class="nav-buscador" type="text" placeholder="Buscar productos." name="productos-buscados" />
+      <a href="./productos.html" class="nav-productos">Productos</a>
+      <a href="./Carrito.html" class="nav-carrito">Carrito</a>
+      <a href="./Contacto.html" class="nav-contacto">Contacto</a>
+      <a href="./Nosotros.html" class="nav-nosotros">Nosotros</a>
+    </div>
+  </header>
+
+  <br><br><br><br>
+
+  <form action="#" method="GET">
+    <input type="text" placeholder="Tu nombre completo" name="Nombre" />
+    <input type="text" placeholder="Asunto del contacto" name="Asunto" />
+    <br /><br />
+    <input type="text" placeholder="Email de contacto" name="email" />
+    <br /><br />
+    <span>Consulta anonima</span>
+    <input type="checkbox" />
+    <br /><br />
+    <select name="consulta">
+      <option value="Default">Motivo de la consulta</option>
+      <option value="Compras">Compras</option>
+      <option value="Legal">Legales</option>
+      <option value="Reventa">Reventa</option>
+      <option value="Soporte">Soporte</option>
+      <option value="Otros">Otros</option>
+    </select>
+    <br /><br />
+    <textarea placeholder="Indique su consulta aqui..." name="textarea" cols="50" rows="10"></textarea>
+    <br /><br />
+    <input type="submit" value="Enviar consulta" />
+    <input type="reset" value="Restablecer formulario" />
+  </form>
+  <br><br><br>
+  <footer>
+    <div clas="flex-footer">
+      <div class="footer-izquierda">
+        <span>Ciudad Azulona,<br />
+          Centro Comercial de Azulona, Piso 4.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
