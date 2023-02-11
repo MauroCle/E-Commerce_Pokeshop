@@ -591,3 +591,35 @@ li {
     margin: 5px;
   }
 }
+.main-contacto {
+  width: 50%;
+}
+.main-contacto form {
+  min-width: 90%;
+}
+.main-contacto .textarea-contacto {
+  height: 100px;
+}
+
+@media (max-width: 1200px) {
+  .main-contacto {
+    width: 75%;
+  }
+  .main-contacto form {
+    min-width: 90%;
+  }
+  .main-contacto .textarea-contacto {
+    height: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .main-contacto {
+    width: 95%;
+  }
+  .main-contacto form {
+    min-width: 90%;
+  }
+  .main-contacto .textarea-contacto {
+    height: 100px;
+  }
+}

@@ -1,0 +1,42 @@
+.main-contacto {
+    width: 50%;
+
+    form {
+        min-width: 90%;
+    }
+
+    .textarea-contacto {
+        height: 100px
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .main-contacto {
+        width: 75%;
+    
+        form {
+            min-width: 90%;
+        }
+    
+        .textarea-contacto {
+            height: 100px
+        }
+    
+    }
+}
+
+@media (max-width: 800px) {
+    .main-contacto {
+        width: 95%;
+    
+        form {
+            min-width: 90%;
+        }
+    
+        .textarea-contacto {
+            height: 100px
+        }
+    
+    }
+}
