@@ -1,0 +1,149 @@
+$color1: #fff;
+$color2: #ff9f43;
+$color3: #f0f8ff;
+$color4: #f3b006;
+$fuente2: sans-serif;
+$fuente3: 'Roboto Slab', serif;
+$background-color2: #f0f0f0;
+$background-color3: #252525;
+
+
+
+header {
+	font-family: $fuente2;
+	background-color: $background-color2;
+	a {
+		color: $color1;
+	}
+}
+.flex-nav-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 0 0 5px 0;
+}
+.nav-info-contacto {
+	display: flex;
+	width: 450px;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 7px 0 0 0;
+}
+.nav-info-configuracion {
+	display: flex;
+	width: 250px;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 7px 0 0 0;
+	span {
+		cursor: pointer;
+		&:hover {
+			color: $color2;
+		}
+	}
+}
+.lenguaje-img {
+	width: 25px;
+	border-radius: 3px;
+	vertical-align: top;
+}
+.grid-nav-general {
+	background-color: $background-color3;
+	display: grid;
+	align-items: baseline;
+	justify-items: center;
+	grid-auto-columns: repeat(24,1fr);
+	grid-template-areas: "logo . . . . . . . . . . . . . . . . . . . buscador buscador buscador buscador . . producto carrito contacto nosotros";
+	padding: 50px 30px 70px 0;
+	color: $color3;
+}
+.poke {
+	font-size: 32px;
+	color: $color4;
+	margin-left: -43px;
+	font-family: $fuente3;
+	grid-area: logo;
+	cursor: pointer;
+}
+.shop {
+	font-size: 32px;
+	margin-left: 105px;
+	font-family: $fuente3;
+	grid-area: logo;
+	cursor: pointer;
+	color: $color1;
+}
+.nav-buscador {
+	grid-area: buscador;
+	height: 30px;
+	border-radius: 50px;
+	text-align: center;
+	width: 275px;
+}
+.nav-productos {
+	grid-area: producto;
+	cursor: pointer;
+	&:hover {
+		color: $color2;
+	}
+}
+.nav-carrito {
+	grid-area: carrito;
+	cursor: pointer;
+	&:hover {
+		color: $color2;
+	}
+}
+.nav-contacto {
+	grid-area: contacto;
+	cursor: pointer;
+	&:hover {
+		color: $color2;
+	}
+}
+.nav-nosotros {
+	grid-area: nosotros;
+	cursor: pointer;
+	&:hover {
+		color: $color2;
+	}
+}
+
+@media (max-width: 800px) {
+	.grid-nav-general {
+		background-color: $background-color3;
+		display: grid;
+		align-items: baseline;
+		justify-items: center;
+		grid-auto-columns: repeat(4,1fr);
+		grid-row: 2fr 2fr;
+		grid-template-areas: "logo logo logo logo ""buscador buscador buscador buscador" " producto carrito contacto nosotros";
+		padding-right: 0px;
+		padding-bottom: 30px;
+	}
+	.flex-nav-info {
+		justify-content: center;
+	}
+	.poke {
+		margin-left: -70px;
+	}
+	.shop {
+		margin-left: 80px;
+	}
+	.nav-buscador {
+		margin-top: 30px;
+	}
+	.nav-productos {
+		margin-top: 50px;
+	}
+	.nav-carrito {
+		margin-top: 50px;
+	}
+	.nav-contacto {
+		margin-top: 50px;
+	}
+	.nav-nosotros {
+		margin-top: 50px;
+	}
+}
