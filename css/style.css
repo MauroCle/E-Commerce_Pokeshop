@@ -357,7 +357,7 @@ li {
   color: #0b0b0b;
 }
 .producto-carrito-descripcion p {
-  color: #5c6264;
+  color: #222f3e;
 }
 
 .producto-carrito-precio {
@@ -400,11 +400,11 @@ li {
   padding: 5px;
   border-radius: 5px;
   background-color: #252525;
-  color: #f2f2f2;
+  color: #f0f8ff;
 }
 .completar-compra:hover {
-  background-color: #ff9f43;
-  color: black;
+  background-color: #f0f0f0;
+  color: #f3b006;
   transition: 0.3s;
 }
 

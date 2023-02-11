@@ -1,25 +1,11 @@
-@import './utilidades/_base';
-@import './utilidades/_header';
-@import './utilidades/_footer';
-@import './utilidades/_tarjeta-productos';
-@import './sections/_style-index';
-@import './sections/_style-carrito';
-@import	'./sections/_style-nosotros';
-@import './sections/_style-productos';
+@import './utilidades/colors';
+@import './utilidades/typo';
 
-
-$color1: #fff;
-$color2: #ff9f43;
-$color3: #f0f8ff;
-$color4: #f3b006;
-$color5: #b2bec3;
-$color6: #222f3e;
-$color7: #0b0b0b;
-$color8: #f2f2f2;
-$fuente1: Proxima Nova,Helvetica, Neue,Helvetica,Roboto,Arial,sans-serif;
-$fuente2: sans-serif;
-$fuente3: 'Roboto Slab', serif;
-$background-color1: #f2f2f2;
-$background-color2: #f0f0f0;
-$background-color3: #252525;
-
+@import './utilidades/reset';
+@import './utilidades/header';
+@import './utilidades/footer';
+@import './utilidades/tarjeta-productos';
+@import './sections/style-index';
+@import './sections/style-carrito';
+@import './sections/style-nosotros';
+@import './sections/style-productos';

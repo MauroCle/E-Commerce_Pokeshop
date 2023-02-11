@@ -1,10 +1,4 @@
 
-$color1: #fff;
-$color5: #b2bec3;
-$color6: #222f3e;
-$color7: #0b0b0b;
-$background-color1: #f2f2f2;
-$background-color5: #ff9f43;
 
 .producto {
 	width: 20%;
@@ -15,13 +9,15 @@ $background-color5: #ff9f43;
 	border-radius: 10px;
 	cursor: pointer;
 	padding-top: 10px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	transition: 0.4s;
 	background: $background-color1;
+
 	&:hover {
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-		transform: translate(0px,-8px);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		transform: translate(0px, -8px);
 	}
+
 	img {
 		width: 175px;
 		height: 175px;
@@ -29,17 +25,20 @@ $background-color5: #ff9f43;
 		margin: 0 auto;
 		display: block;
 	}
+
 	p {
 		text-align: center;
 		color: $color5;
 		padding-top: 0 8px;
 	}
+
 	h6 {
 		font-size: 26px;
 		text-align: center;
 		color: $color6;
 		margin: 0;
 	}
+
 	.comprar {
 		text-align: center;
 		font-size: 24px;
@@ -53,6 +52,7 @@ $background-color5: #ff9f43;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 		background: $color7;
+
 		&:hover {
 			background: $background-color5;
 			transition: 0.3s;
