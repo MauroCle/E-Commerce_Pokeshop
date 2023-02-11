@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="Stylesheet" href="../css/style.css" />
   <title>Document</title>
 </head>
@@ -34,32 +36,52 @@
     </div>
   </header>
 
-  <br><br><br><br>
 
-  <form action="#" method="GET">
-    <input type="text" placeholder="Tu nombre completo" name="Nombre" />
-    <input type="text" placeholder="Asunto del contacto" name="Asunto" />
-    <br /><br />
-    <input type="text" placeholder="Email de contacto" name="email" />
-    <br /><br />
-    <span>Consulta anonima</span>
-    <input type="checkbox" />
-    <br /><br />
-    <select name="consulta">
-      <option value="Default">Motivo de la consulta</option>
-      <option value="Compras">Compras</option>
-      <option value="Legal">Legales</option>
-      <option value="Reventa">Reventa</option>
-      <option value="Soporte">Soporte</option>
-      <option value="Otros">Otros</option>
-    </select>
-    <br /><br />
-    <textarea placeholder="Indique su consulta aqui..." name="textarea" cols="50" rows="10"></textarea>
-    <br /><br />
-    <input type="submit" value="Enviar consulta" />
-    <input type="reset" value="Restablecer formulario" />
-  </form>
-  <br><br><br>
+  <main class=" ms-auto me-auto mt-5 mb-5" style="max-width: 70%;">
+    <div class="card p-3 mb-2 bg-light ms-auto me-auto" style="max-width: 70%;">
+      <form class="ms-auto me-auto" action="#" method="GET" style="min-width: 90%;">
+
+        <div class="input-group mt-3 mb-3 ml-2">
+          <span class="input-group-text" id="basic-addon1" >Nombre</span>
+          <input type="text" class="form-control" placeholder="Tu nombre completo" aria-label="Username" aria-describedby="basic-addon1" >
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1" >Mail</span>
+          <input type="text" class="form-control" placeholder="Mail de contacto" aria-label="Username" aria-describedby="basic-addon1" >
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Asunto</span>
+          <input type="text" class="form-control" placeholder="Asunto de tu consulta" aria-label="Username" aria-describedby="basic-addon1" >
+        </div>
+
+        <div class="form-check form-switch mt-4  mb-3">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault" >
+            Consulta anonima
+          </label>
+        </div>
+
+        <select class="form-select" aria-label="Default select example">
+          <option value="Default">Motivo de la consulta</option>
+          <option value="Compras">Compras</option>
+          <option value="Legal">Legales</option>
+          <option value="Reventa">Reventa</option>
+          <option value="Soporte">Soporte</option>
+          <option value="Otros">Otros</option>
+        </select>
+
+        <div class="form-floating mt-3">
+          <textarea class="form-control" placeholder="Indique su consulta aqui" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Indique su consulta aqui</label>
+        </div>
+
+        <button type="button" class="btn btn-success mt-3 me-5">Enviar consulta</button>
+        <button type="button" class="btn btn-danger mt-3">Restablecer formulario</button>
+      </form>
+    </div>
+  </main>
   <footer>
     <div clas="flex-footer">
       <div class="footer-izquierda">
