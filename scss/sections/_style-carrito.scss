@@ -95,9 +95,10 @@ li {
 	border-radius: 5px;
 	background-color: $background-color3;
 	color: $color3;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
 	&:hover {
-		background-color: $background-color2;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 		color: $color4;
 		transition: 0.3s;
 	}
